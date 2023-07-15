@@ -4,7 +4,7 @@
 *Return always 0 (seccess)
 */
 int main(void)
-	{
+{
 printf("Size of a char:%Lubyte(s)\n",sizeof(char)); 
 Printf("Size of an int:%Lubyte(s)\n",sizeof(int));
 Printf("Size of a long it:%Lubyte(s)\n",sizeof(long int));
