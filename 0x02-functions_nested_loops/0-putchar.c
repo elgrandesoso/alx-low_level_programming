@@ -2,7 +2,8 @@
 #include "main.h"
 	/**
 	 * main - print _putchar
-	 * is written by mbah
+	 * is written by soufiane el kbir 
+	 *  Description: 'main.h'
 	 * Return: 0
 	 */
 
