@@ -1,11 +1,11 @@
 #include "main.h"
-	/**
-	 * main - print _putchar
-	 * is written by soufiane elkbir
-	 * Return: 0
-	 */
-
-
+/**
+ * @brief This is the entry point of the program.
+ *        It prints "_putchar" followed by a new line.
+ *
+ * @return int Returns 0 on successful execution.
+ * writen by Soufiane el kbir 
+ */
 	int main(void)
 	{
 	_putchar('_');
