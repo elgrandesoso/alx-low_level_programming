@@ -1,48 +1,34 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_times_table - prints the n times table, starting with 0
- * @n: number of the times table
+ * print_times_table - Prints the n times table, starting with 0
+ * @n: The number for which the times table is to be printed
  */
 void print_times_table(int n)
 {
-	int i, j, k;
-
-	if (n >= 0 && n <= 15)
+	if (n < 0 || n > 15)
 	{
-		for (i = 0; i <= n; i++)
-		{
-			for (j = 0; j <= n; j++)
-			{
-				k = j * i;
-        if (j == 0)
-				{
-					_putchar(k + '0');
-				} else if (k < 10 && j != 0)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(k + '0');
-				} else if (k >= 10 && k < 100)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar((k / 10) + '0');
-					_putchar((k % 10) + '0');
-				} else if (k >= 100)
-				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar((k / 100) + '0');
-					_putchar(((k / 10) % 10) + '0');
-					_putchar((k % 10) + '0');
-				}
-			}
-			_putchar('\n');
-		}
+		/* Check if n is out of valid range (0 to 15) */
+		return; /* Do nothing if n is invalid */
+	}
+
+	printf("Times Table for %d:\n", n);
+	printf("-------------------\n");
+
+	for (int i = 0; i <= 10; i++)
+	{
+		printf("%2d x %2d = %2d\n", i, n, i * n);
 	}
 }
 
+int main()
+{
+	int n;
+
+	printf("Enter a number (0 to 15): ");
+	scanf("%d", &n);
+
+	print_times_table(n);
+
+	return 0;
+}
