@@ -6,7 +6,7 @@
  *
  * writen by soufiane el kbir 
  * Description: rototype: void print_alphabet(void);
-You can only use _putchar twice in your code.
+ * You can only use _putchar twice in your code.
  * Return: 0 on successful execution
  */
 void print_alphabet(void)
